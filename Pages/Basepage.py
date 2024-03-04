@@ -26,6 +26,9 @@ class BasePage:
         ele.is_displayed()
         return bool(ele)
 
+    def maximize_wind(self):
+        self.driver.maximize_window()
+
 
 
 

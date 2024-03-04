@@ -21,6 +21,7 @@ class Test_Header(BaseTest):
     def test_user_management(self):
         self.homepage = Admin(self.driver)
         sleep(3)
+        self.homepage.maximize_wind()
         self.homepage.do_click_admin()
         self.homepage.user_management()
         self.homepage.validate_jobs()

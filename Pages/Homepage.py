@@ -19,6 +19,9 @@ class Admin(BasePage):
         super().__init__(driver)
         self.driver.get(TestData.BASE_URL)
 
+    def maximize_win(self):
+        self.maximize_wind()
+
     def do_click_admin(self):
         self.do_click(self.ADMIN)
 
